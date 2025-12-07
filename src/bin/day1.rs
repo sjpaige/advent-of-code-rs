@@ -36,7 +36,7 @@ fn main() {
             let (direction, amount) = line.split_at(1);
             let amount = amount.parse::<i32>().unwrap();
 
-            for i in 0..amount {
+            for _ in 0..amount {
                 match direction {
                     "L" => position = ((position - 1) + 100) % 100,
                     "R" => position = (position + 1) % 100,
